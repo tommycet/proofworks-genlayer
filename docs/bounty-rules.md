@@ -1,16 +1,25 @@
-# ProofWorks Bounty Rules: Staking and Appeals
+# Bounty Rules — Phase 9
 
-This document outlines the rules for worker staking and creator/worker appeals introduced in ProofWorks Phase 9.
+## Appeal Bond
 
-## 1. Worker Staking (Skin in the Game)
-- Creators can require a worker stake percentage (from 0% to 100%) when posting a bounty case.
-- Workers must lock the corresponding amount of $GEN collateral when claiming the task.
-- If the claim expires without a proof submission, the stake is forfeited: 50% is sent to the creator as compensation for the delay, and 50% is sent to the protocol treasury.
-- Upon successful completion and task finalization, the collateral is returned to the worker.
+When a worker disputes a task outcome, they must post an **appeal bond equal to 20% of the task reward**.
 
-## 2. Jury Appeals & Flagging Window
-- There is a flagging delay window after an AI evaluation.
-- Any community member can flag the evaluation within the window by locking a minor stake.
-- Alternatively, participants (creator/worker) can appeal the automated AI Jury verdict by locking a 20% appeal bond.
-- If appealed, a panel of 3 community jurors will cast votes on-chain to settle the dispute.
-- If the appellant wins, their bond is returned. If they lose, the bond is split among the jurors as arbitration fees.
+This bond ensures that appeals are made in good faith and discourages frivolous disputes.
+
+- If the appeal is upheld, the bond is refunded.
+- If the appeal is rejected, the bond is forfeited.
+
+## Worker Staking
+
+Workers must stake their claim when accepting a task. If the **claim expires without a proof submission**, the worker's stake is **forfeited**.
+
+This mechanism ensures that workers are committed to completing tasks within the designated time frame and prevents resource hoarding.
+
+- Stake amount is determined by the task reward tier.
+- Once a valid proof is submitted within the claim window, the stake is released back to the worker.
+- If the claim window passes without proof submission, the stake is permanently lost.
+
+## References
+
+- This document was created in response to [Issue #4](https://github.com/tommycet/proofworks-genlayer/issues/4)
+- Phase 9 introduced appeal fees and worker staking to the ProofWorks protocol
