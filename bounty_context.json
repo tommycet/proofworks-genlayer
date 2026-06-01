@@ -1,11 +1,10 @@
 {
   "owner": "tommycet",
   "repo": "proofworks-genlayer",
-  "issueNumber": "26",
-  "title": "Add CONTRIBUTING.md with three core sections",
-  "body": "## Summary\n\nThe repo accepts external contributions but does not yet have a `CONTRIBUTING.md` explaining how to set up the environment, run the tests, and submit a PR.\n\n## Acceptance criteria\n\nA submitted PR must:\n\n1. Add a new file named `CONTRIBUTING.md` at the repository root.\n2. The file must contain three top-level sections (Markdown `##` headings): `Setup`, `Running the tests`, and `Submitting a pull request`.\n3. The `Running the tests` section must mention the command `make test`.\n4. The PR must come from the same repository (tommycet/proofworks-genlayer).\n\n## Reward\n\nFunded as a ProofWorks bounty case. Worker payout on APPROVE.\n",
+  "issueNumber": "4",
+  "title": "Bounty: Document Appeal Fees and Staking",
+  "body": "This task requires documenting the appeal fees (20% bond) and worker staking (forfeited on claim expiry) introduced in ProofWorks Phase 9.\n\nAcceptance Criteria:\n1. Create a new markdown file docs/bounty-rules.md.\n2. Document that the appeal bond is 20% of the task reward.\n3. Document that worker stake is forfeited if the claim expires without a proof submission.\n4. References this issue in the PR body.",
   "labels": [
-    "documentation",
     "bounty"
   ],
   "gitCloneUrl": "https://github.com/tommycet/proofworks-genlayer.git",
