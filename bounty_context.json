@@ -1,0 +1,13 @@
+{
+  "owner": "tommycet",
+  "repo": "proofworks-genlayer",
+  "issueNumber": "26",
+  "title": "Add CONTRIBUTING.md with three core sections",
+  "body": "## Summary\n\nThe repo accepts external contributions but does not yet have a `CONTRIBUTING.md` explaining how to set up the environment, run the tests, and submit a PR.\n\n## Acceptance criteria\n\nA submitted PR must:\n\n1. Add a new file named `CONTRIBUTING.md` at the repository root.\n2. The file must contain three top-level sections (Markdown `##` headings): `Setup`, `Running the tests`, and `Submitting a pull request`.\n3. The `Running the tests` section must mention the command `make test`.\n4. The PR must come from the same repository (tommycet/proofworks-genlayer).\n\n## Reward\n\nFunded as a ProofWorks bounty case. Worker payout on APPROVE.\n",
+  "labels": [
+    "documentation",
+    "bounty"
+  ],
+  "gitCloneUrl": "https://github.com/tommycet/proofworks-genlayer.git",
+  "repoDir": "/Users/macminim1/Documents/efe/bounty-hunter/temp/proofworks-genlayer"
+}
