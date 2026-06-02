@@ -11,13 +11,13 @@ Thank you for your interest in contributing to ProofWorks! This guide will help 
    cd proofworks-genlayer
    ```
 
-2. Install Python dependencies (requires Python 3.10+):
+2. Install Python dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Install Node.js dependencies (requires Node.js 18+):
+3. Install Node.js dependencies:
 
    ```bash
    npm install
