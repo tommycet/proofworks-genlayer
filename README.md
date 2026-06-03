@@ -35,7 +35,7 @@ That is the whole product in one paragraph. The rest of this README is how it wo
 - Frontend (GitHub Pages, mirror): https://tommycet.github.io/proofworks-genlayer/
 - GitHub proxy API: `https://proofworks-genlayer.vercel.app/api/github?url=<github issue or PR url>`
 - Studionet contract (current): `0x541031b4574cDE16c93c2b580Bc1Da763a3efbc7`
-- Walkthrough video: _to be added_
+- Walkthrough video: https://youtu.be/Z5fGqMQGQR0
 
 The Vercel deployment runs both the frontend and the GitHub proxy as a serverless function on the same origin, so there is no CORS dance and no cold-start sleep. The Pages site is kept as a backup mirror but does not have the proxy attached. The burner wallet panel lets you switch between Creator, Worker, and Juror roles without a real funded account, so the whole flow is testable in a browser tab. If your browser does not have an injected wallet, the read-only view still works.
 
