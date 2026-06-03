@@ -77,11 +77,11 @@ async function main() {
     address: CONTRACT,
     functionName: "create_case",
     args: [
-      "Add CONTRIBUTING.md with three core sections",
-      "The repo accepts contributions but has no CONTRIBUTING.md.",
-      "PR must add CONTRIBUTING.md at the repo root with three ## sections (Setup, Running the tests, Submitting a pull request), mention 'make test' in the Running the tests section, and come from the same repo.",
+      "Add an MIT LICENSE file at the repository root",
+      "The repo currently has no top-level license file.",
+      "PR must add a LICENSE file at the repo root with the standard MIT License text, copyright line referencing year 2026 and holder tommycet, and come from the same repo.",
       "GITHUB_ISSUE",
-      "https://github.com/tommycet/proofworks-genlayer/issues/26",
+      "https://github.com/tommycet/proofworks-genlayer/issues/45",
       "GITHUB_PR",
       0,    // deadline
       "",   // assigned_worker (open)
@@ -114,7 +114,7 @@ async function main() {
   const submitHash = await workerClient.writeContract({
     address: CONTRACT,
     functionName: "submit_proof",
-    args: [taskId, "https://github.com/tommycet/proofworks-genlayer/pull/27", "Submitted PR #27 to satisfy the issue."],
+    args: [taskId, "https://github.com/tommycet/proofworks-genlayer/pull/46", "Submitted PR #46 to satisfy the issue."],
     value: 0n,
   });
   await waitAccepted(workerClient, submitHash, "submit_proof");
