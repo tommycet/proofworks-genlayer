@@ -1,0 +1,12 @@
+{
+  "owner": "tommycet",
+  "repo": "proofworks-genlayer",
+  "issueNumber": "4",
+  "title": "Bounty: Document Appeal Fees and Staking",
+  "body": "This task requires documenting the appeal fees (20% bond) and worker staking (forfeited on claim expiry) introduced in ProofWorks Phase 9.\n\nAcceptance Criteria:\n1. Create a new markdown file docs/bounty-rules.md.\n2. Document that the appeal bond is 20% of the task reward.\n3. Document that worker stake is forfeited if the claim expires without a proof submission.\n4. References this issue in the PR body.",
+  "labels": [
+    "bounty"
+  ],
+  "gitCloneUrl": "https://github.com/tommycet/proofworks-genlayer.git",
+  "repoDir": "/Users/macminim1/Documents/efe/bounty-hunter/temp/proofworks-genlayer"
+}
