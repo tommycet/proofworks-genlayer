@@ -1,0 +1,13 @@
+{
+  "owner": "tommycet",
+  "repo": "proofworks-genlayer",
+  "issueNumber": "45",
+  "title": "Add an MIT LICENSE file at the repository root",
+  "body": "## Summary\n\nThe repo currently has no top-level license file. The README's License section explicitly says \"Not yet specified. An explicit license will be added before mainnet.\" Time to add it.\n\nMIT is the right call: short, permissive, well-understood by reviewers and contributors, and consistent with the rest of the GenLayer ecosystem.\n\n## Acceptance criteria\n\nA submitted PR must:\n\n1. Add a new file named `LICENSE` at the repository root (no extension, all caps).\n2. The file must be the standard MIT License text.\n3. The copyright line must reference the year `2026` and the holder `tommycet`.\n4. The PR must come from the same repository (tommycet/proofworks-genlayer).\n\n## Reward\n\nFunded as a ProofWorks bounty case. Worker payout on APPROVE.\n",
+  "labels": [
+    "documentation",
+    "bounty"
+  ],
+  "gitCloneUrl": "https://github.com/tommycet/proofworks-genlayer.git",
+  "repoDir": "/Users/macminim1/Documents/efe/bounty-hunter/temp/proofworks-genlayer"
+}
