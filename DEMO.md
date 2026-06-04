@@ -1,31 +1,37 @@
-# ProofWorks demo walkthrough
+# ProofWorks Demo Walkthrough
 
-Live demo: **https://proofworks-genlayer.vercel.app**
+Welcome to the ProofWorks demo! This guide provides a step-by-step walkthrough of the platform's core workflow using the live demo.
 
-This is the shortest path from "open the site" to "see GenLayer pay a bounty out."
+You can access the live demo here: [https://proofworks-genlayer.vercel.app](https://proofworks-genlayer.vercel.app)
 
-## 1. Open the site
+---
 
-Go to https://proofworks-genlayer.vercel.app. The top bar shows the active Studionet contract and the current escrow summary. The docket lists existing tasks. You do not need a wallet for any of this.
+## Step-by-Step Demo Walkthrough
 
-## 2. Use a burner or connect a wallet
+### 1. Open the Demo Site
+Visit the live application in your browser at [https://proofworks-genlayer.vercel.app](https://proofworks-genlayer.vercel.app) and wait for the dashboard and escrow summary to load.
 
-In the wallet panel, click **Use free burners** to switch between Creator, Worker, and Juror roles without funding anything. Or click **Connect wallet** if you have MetaMask and want to use a real Studionet address.
+### 2. Connect or Use a Burner
+Connect an injected wallet (like MetaMask) or click **"Use free burners"** to run the demo without a funded account. Burner mode allows you to easily switch roles between Creator, Worker, and Juror. Keep the **"Creator"** burner selected to begin.
 
-## 3. Create a task as Creator
+### 3. Create a Task
+Under the **"Create escrow case"** panel, create a simple text-based task:
+- **Title**: `Smoke test proof`
+- **Description**: `Submit proof that says done.`
+- **Acceptance Criteria**: `The proof text must say done.`
+- **Evidence Type**: `TEXT`
+- **Reward**: `1`
+    
+Click **"Seal new case"** and wait for the transaction to be accepted.
 
-Open the **Create escrow case** form, fill in title, description, acceptance criteria, evidence type, and reward, then click **Seal new case**. The transaction wire waits for ACCEPTED and the docket refreshes with your new task in `OPEN` status.
+### 4. Submit Proof
+Select the newly opened case from the list. Switch your burner role to **"Worker"**, enter the word `done` in the **"Proof text"** field, and click **"Submit evidence"**.
 
-## 4. Submit proof as Worker
+### 5. Run AI Jury
+When the case status changes to `SUBMITTED`, click **"Run AI jury"** to trigger the GenLayer Intelligent Contracts to evaluate the submitted proof.
 
-Switch to the Worker burner, select the task, paste a proof URL or text, and click **Submit evidence**. The task moves to `SUBMITTED`.
+### 6. Review the Verdict
+Once the processing is complete, check the verdict panel. For this smoke test, the expected result is an approved verdict with a 100% payout based on the criteria.
 
-## 5. Run the AI jury
-
-Click **Run AI jury**. GenLayer validators fetch the GitHub evidence, run their LLMs, and converge on a structured verdict. The verdict panel shows decision, score, payout percent, confidence, and reason.
-
-## 6. Finalize payout
-
-Click **Finalize payout**. The UI waits for FINALIZED (not just ACCEPTED) because the external transfer only executes after finalization. The task status becomes `PAID`, `REFUNDED`, or `PARTIALLY_PAID` depending on the verdict.
-
-That is the entire loop. The same flow works for GitHub PR evidence: paste a real PR URL in step 4 and the contract will fetch and adjudicate it during step 5.
+### 7. Finalize
+Click **"Finalize payout"** and wait for finalization. The case will move to `PAID`, the active escrow amount will decrease, and the payout summary will update on-chain.
